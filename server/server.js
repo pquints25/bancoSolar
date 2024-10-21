@@ -1,7 +1,10 @@
 const express = require('express');
+const sequelize = require('../connection/connection');
+
+sequelize.sync('cliente');
 
 class Server {
-    
+
     constructor(){
         this.app = express();
         this.port = 3000;
