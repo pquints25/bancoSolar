@@ -1,3 +1,5 @@
+const Cliente = require("../models/cliente")
+
 const findAll = (req, res) => {
     console.log('Funcionando desde la pagina');
     res.json('Probando');

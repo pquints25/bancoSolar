@@ -1,6 +1,6 @@
 const { DataTypes } = require("sequelize");
 const sequelize = require("../connection/connection");
-const Usuario = require("./usuario");
+const Cliente = require("./cliente");
 
 const Transferencia = sequelize.define('Transferencia', {
     id: {

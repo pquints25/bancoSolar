@@ -42,3 +42,11 @@ WHERE id = 2
 
 INSERT INTO transferencias(id, emisor, receptor, monto, fecha)
 VALUES(1, 2, 50000, '');
+
+//CONNECTION/CONNECTION
+const { Sequelize } = require('sequelize');
+
+const sequelize = new Sequelize('postgres://postgres:1234@localhost:5432/bancosolar');
+
+module.exports = sequelize;
+
