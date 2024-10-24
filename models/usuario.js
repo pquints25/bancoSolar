@@ -1,7 +1,7 @@
 const { DataTypes } = require("sequelize");
 const sequelize = require("../connection/connection");
 
-const Cliente = sequelize.define('Cliente', {
+const Usuario = sequelize.define('Usuario', {
 id: {
     primaryKey:true,
     type:DataTypes.INTEGER,
@@ -14,8 +14,8 @@ balance: {
     type:DataTypes.FLOAT
 }
 },{
-    tableName: 'Clientes',
+    tableName: 'Usuario',
     timestamps: false
 });
 
-module.exports = Cliente;
+module.exports = Usuario;

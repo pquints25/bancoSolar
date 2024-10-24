@@ -1,3 +1,5 @@
-const { findAllCliente, createCliente } = require("./service/cliente")
+const Server = require("./server/server");
 
-createTransferencia('nombre x', 'nombre y', 5000);
+const server = new Server 
+
+server.listen();

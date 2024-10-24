@@ -1,10 +1,20 @@
 const { Router } = require('express');
-const { findAll, insert } = require('express');
+const { findAllTransferencias } = require('../service/transferencia');
 
 const router = Router();
 
-router.get('/transferencia', findAll);
+router.get('/transferencia', async (req, res) => {
+    const respuesta = await findAllTransferencias();
+    console.log(respuesta);
+    res.json('get transferencias');
+    
+});
 
-router.get('/transferencia', findAll);
+router.post('/transferencia', (req, res) => {
+    console.log('post transferencias');
+    res.json('post transferencias');
+    
+});
+
 
 module.exports = router;

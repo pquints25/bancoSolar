@@ -1,4 +1,8 @@
 ##Prueba Banco Solar
+//cambia clientes
+ALTER TABLE clientes RENAME TO usuarios;
+
+SELECT * FROM usuarios
 
 INSERTAR ESTO EN PGADMIN
 
